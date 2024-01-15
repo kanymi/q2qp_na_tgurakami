@@ -200,10 +200,9 @@ video{
 }
 
 .s3{
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(236,239,255,1) 0%, rgba(255,255,255,1) 100%);
+    background-image: url("media/bg.png");
 }
 
 .s3title{
@@ -283,8 +282,125 @@ video{
     box-shadow: 5px 5px 20px grey;
 }
 
+.s3link{
+    z-index: 90;
+    height: 15vh;
+    width: 30vw;
+    display: flex;
+    margin: auto;
+    border-radius: 1vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,239,255,1) 100%);
+    box-shadow: 5px 5px 20px grey;
+    transition: 0.5s;
+}
+
+.s3link h1{
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.s3link h1:hover{
+    color:rgb(101, 125, 235);
+    font-size: 3.2em;
+}
+
+.s3link a{
+    text-align: center;
+    text-decoration: none;
+}
+
 footer{
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
     background-color: black;
+}
+
+.fleft{
+    width: 50vw;
+    display: inline-block;
+}
+.flogo{
+    background-image: url("media/logowhite.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    height: 10vh;
+    width: 14vw;
+}
+
+.ftext{
+    display: inline-block;
+    font-size: 1.2em;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+
+.flink{
+    margin-top: 3vh;
+    display: inline-block;
+}
+.flink a{
+
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 1vw;
+    padding: 2vh;
+    padding-top: 2vh;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.5s;
+}
+
+.flink a:hover{
+    font-size: 1.7em;
+    color: white;
+    background-color:rgb(101, 125, 235)
+}
+
+.flinks{
+    margin-top: 2vh;
+    height: 20vh;
+    width: 14vw;
+    display: flex;
+    float: right;
+}
+
+.flinks a{
+    height: 5vh;
+    width: 5vh;
+    color: white;
+}
+
+#fb{
+    background: url('media/spritesheet.png') no-repeat -439px -146px;
+	width: 66px;
+	height: 66px;
+}
+
+#tw{
+    background: url('media/spritesheet.png') no-repeat -66px -72px;
+    width: 67px;
+    height: 66px;
+}
+
+#yt{
+    background: url('media/spritesheet.png') no-repeat -439px -221px;
+	width: 66px;
+	height: 66px;
 }
